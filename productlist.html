@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>商品列表页</title>
+ <link rel="stylesheet" href="css/base.css">
+ <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+ <link rel="stylesheet" href="css/common.css">
+ <link rel="stylesheet" href="css/productlist.css">
+
+</head>
+
+<body>
+ <div class="container">
+  <!-- 头部部分 -->
+  <div class="header">
+   <div class="logo">
+    <img src="images/header_logo.png" alt="">
+   </div>
+   <a href="" class="appdown">
+    <img src="images/header_app.png" alt="">
+   </a>
+  </div>
+
+  <!-- 搜索部分 -->
+  <div class="search_form">
+   <form action="#" class="search clearfix">
+    <input type="text" placeholder="请输入你想比较的商品" class="text">
+    <input class="sousuo" value="搜索">
+   </form>
+  </div>
+
+  <!-- 导航部分 -->
+  <div class="nav">
+   <div class="left">
+    <ul>
+
+     <li>
+      <a href="index.html">首页 > </a>
+     </li>
+     <li>
+      <a href="category.html">全部分类 ></a>
+     </li>
+
+     <li class="name">
+      <!--  -->
+     </li>
+
+
+    </ul>
+   </div>
+   <div class="right">
+    <input type="button" name="" value="删除">
+   </div>
+  </div>
+
+
+  <!-- 列表部分 -->
+  <div class="list">
+   <div class="content">
+    <ul>
+
+     <!-- 挖个坑 -->
+
+     <!-- <li>
+      <a href="" class="clearfix">
+       <div class="left">
+        <img src="images/yyqx.jpg" alt="">
+
+       </div>
+       <div class="right">
+        <p class="top">乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</p>
+        <p class="center">&yen;
+         <span>19999</span>
+        </p>
+        <p class="bottom">
+         报价
+         <span>(20)</span>
+         评论
+         <span>(1000)</span>
+        </p>
+       </div>
+
+      </a>
+     </li> -->
+
+    </ul>
+   </div>
+
+
+  </div>
+
+
+  <!-- 下拉框部分 -->
+  <div class="page">
+   <ul class="clearfix">
+    <li class="history">
+     <a href="javascript:history.go(-1);">上一页</a>
+    </li>
+    <li class="page_list">
+     <select>
+      <option value="">1/3</option>
+      <option value="">2/3</option>
+      <option value="">3/3</option>
+     </select>
+
+    </li>
+    <li class="next">
+     <a href="javascript:history.go(1);">下一页</a>
+    </li>
+   </ul>
+  </div>
+
+
+
+
+  <!-- 底部部分 -->
+  <div class="footer">
+   <div class="foot_top">
+    <ul>
+     <li>
+      <a href="javascript:;">登录</a>
+     </li>
+     <li>
+      <a href="javascript:;">注册</a>
+
+     </li>
+     <li>
+      <a href="#">
+       <span>↑</span>
+       <span>返回顶部</span>
+      </a>
+
+     </li>
+    </ul>
+   </div>
+
+   <div class="foot_bottom">
+    <p>
+     <a href="">手机APP下载</a>
+     <a href="">慢慢买手机版</a>
+     <span>--掌上比价平台</span>
+    </p>
+    <p>m.manmanbuy.com</p>
+   </div>
+
+  </div>
+
+
+ </div>
+
+ <script type="text/html" id="tpl2">
+  {{each result v i}}
+
+  <a href=""> {{v.category}}></a>
+  {{/each}}
+ </script>
+
+ <script type="text/html" id="tpl1">
+
+  {{each result v i}}
+  <li>
+   <a href="" class="clearfix">
+    <div class="left">
+     {{#v.productImg}}
+
+    </div>
+    <div class="right">
+     <p class="top">{{v.productName}}</p>
+     <p class="center">
+      <span>{{v.productPrice}}</span>
+     </p>
+     <p class="bottom">
+
+      <span>{{v.productQuote}}</span>
+
+      <span>{{v.productCom}}</span>
+     </p>
+    </div>
+
+   </a>
+  </li>
+  {{/each}}
+
+ </script>
+
+ <script src="lib/jquery/jquery.js"></script>
+ <script src="lib/artTemplate/template-web.js"></script>
+ <script src="js/common.js"></script>
+ <script src="js/productlist.js"></script>
+</body>
+
+</html>

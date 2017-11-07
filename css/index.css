@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/* 搜索部分 */
+
+.search_form {
+ height: 50px;
+ max-width: 750px;
+ background-color: #fff;
+ padding: 10px;
+}
+
+.search {
+ height: 30px;
+ position: relative;
+ padding-right: 70px;
+}
+
+.text {
+ width: 100%;
+ height: 30px;
+ float: left;
+ border-radius: 15px;
+ border: none;
+ background-color: #f1f1f1;
+ text-indent: 1.5em;
+}
+
+.sousuo {
+ background-color: #ff841d;
+ overflow: hidden;
+ width: 63px;
+ height: 30px;
+ position: absolute;
+ top: 0;
+ right: 0;
+ text-align: center;
+ border-radius: 15px;
+ border: none;
+ font-size: 18px;
+ color: #fff;
+}
+
+
+/* 导航部分 */
+
+.nav {
+ width: 100%;
+ height: 240px;
+ padding: 8px 0;
+ background-color: #fff;
+}
+
+.nav .nav_search {
+ width: 100%;
+}
+
+.nav li {
+ width: 25%;
+ float: left;
+ padding-bottom: 10px;
+}
+
+.nav .nav_search a {
+ display: block;
+ text-align: center;
+}
+
+.nav .nav_search img {
+ width: 50px;
+ height: 50px;
+ margin: 0 auto;
+}
+
+.nav .nav_search span {
+ font-size: 12px;
+}
+
+
+/* 超值折扣部分 */
+
+.recommen {
+ width: 100%;
+ height: 35px;
+ margin-top: 10px;
+ padding-left: 10px;
+ background-color: #ff841d;
+ line-height: 35px;
+}
+
+.recommen span {
+ font-size: 17px;
+ font-weight: 700;
+ color: #fff;
+ float: left;
+}
+
+.recommen img {
+ width: 30px;
+ height: 30px;
+ float: right;
+ margin-right: 10px;
+}
+
+
+/* 产品列表部分 */
+
+.recommen-product {
+ width: 100%;
+ background-color: #fff;
+}
+
+.list_product li {
+ width: 100%;
+ height: 128px;
+ padding: 10px;
+ background-color: #fff;
+ border-bottom: 1px solid #ccc;
+}
+
+.list_product .list_img {
+ float: left;
+ padding: 10px;
+}
+
+.list_product .list_img img {
+ width: 100px;
+ height: 100px;
+}
+
+.list_product .list_info {
+ overflow: hidden;
+ padding: 10px;
+ font-size: 16px;
+}
+
+.list_info .title {
+ height: 57px;
+}
+
+.list_info .title span {
+ color: red;
+}
+
+.list_info .other {
+ font-size: 12px;
+ color: #ccc;
+}
+
+.list_info .other :first-child {
+ float: left;
+}
+
+.list_info .other :last-child {
+ float: right;
+}
+
+
+/* 更多优惠信息部分 */
+
+.more-bar {
+ width: 100%;
+ max-width: 750px;
+ height: 30px;
+ margin: 10px;
+ padding-right: 10px;
+}
+
+.more-bar a {
+ margin: 10px;
+ padding-right: 10px;
+ display: block;
+ height: 30px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ line-height: 30px;
+ text-align: center;
+ background-color: #f1f1f1;
+}
+
+
+/* 品牌排行部分 */
+
+.recommen-content {
+ width: 100%;
+ height: 35px;
+ line-height: 35px;
+ padding-right: 20px;
+ background-color: #ff841d;
+}
+
+.recommen-content span {
+ font-size: 16px;
+ margin-left: 20px;
+ color: #fff;
+}
+
+.recommen-content img {
+ width: 30px;
+ height: 30px;
+ float: right;
+}

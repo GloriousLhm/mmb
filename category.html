@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>慢慢买-分类页</title>
+ <link rel="stylesheet" href="css/base.css">
+ <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+ <link rel="stylesheet" href="css/common.css">
+ <link rel="stylesheet" href="css/category.css">
+
+</head>
+
+<body>
+ <div class="container">
+  <!-- 头部部分 -->
+  <div class="header">
+   <div class="logo">
+    <img src="images/header_logo.png" alt="">
+   </div>
+   <a href="" class="appdown">
+    <img src="images/header_app.png" alt="">
+   </a>
+  </div>
+
+  <!-- 搜索部分 -->
+  <div class="search_form">
+   <form action="#" class="search clearfix">
+    <input type="text" placeholder="请输入你想比较的商品" class="text">
+    <input class="sousuo" value="搜索">
+   </form>
+  </div>
+
+  <!-- 列表部分 -->
+  <div class="category">
+   <div class="row ">
+    <ul class="title clearfix">
+
+     <!-- 需要渲染的部分 -->
+     <!-- <li>
+
+      <a href="javascript:;" class="top">大家电</a>
+
+      <ul class="content clearfix">
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+       <li>
+        <a href="javascript:;">电视</a>
+       </li>
+      </ul>
+     </li> -->
+
+
+
+
+    </ul>
+   </div>
+  </div>
+
+
+  <!-- 底部部分 -->
+  <div class="footer">
+   <div class="foot_top">
+    <ul>
+     <li>
+      <a href="javascript:;">登录</a>
+     </li>
+     <li>
+      <a href="javascript:;">注册</a>
+
+     </li>
+     <li>
+      <a href="#">
+       <span>↑</span>
+       <span>返回顶部</span>
+      </a>
+
+     </li>
+    </ul>
+   </div>
+
+   <div class="foot_bottom">
+    <p>
+     <a href="">手机APP下载</a>
+     <a href="">慢慢买手机版</a>
+     <span>--掌上比价平台</span>
+    </p>
+    <p>m.manmanbuy.com</p>
+   </div>
+
+  </div>
+
+
+ </div>
+
+
+ <script type="text/html" id="tpl">
+
+
+  {{each result v i}}
+  <li>
+
+   <a href="javascript:;" class="top" data-titleid="{{v.titleId}}">{{v.title}}</a>
+
+   <ul class="content clearfix">
+    <!-- 挖个坑 -->
+   </ul>
+
+  </li>
+  {{/each}}
+
+ </script>
+
+ <script type="text/html" id="tpl1">
+  {{each result v i}}
+  <li>
+   <a href="productlist.html?categoryid={{v.categoryId}}">{{v.category}}</a>
+  </li>
+  {{/each}}
+ </script>
+
+
+ <script src="lib/jquery/jquery.js"></script>
+ <script src="lib/artTemplate/template-web.js"></script>
+ <script src="js/category.js"></script>
+</body>
+
+</html>

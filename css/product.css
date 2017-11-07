@@ -1,0 +1,256 @@
+@charset "UTF-8";
+.container {
+ max-width: 750px;
+}
+
+.back {
+ width: 50px;
+ height: 50px;
+ position: absolute;
+ top: 0px;
+ padding: 12px;
+ background-clip: content-box;
+ background-origin: content-box;
+}
+
+.back a {
+ display: block;
+ width: 20px;
+ height: 20px;
+ background: url("../images/icon_bar.png") -200px -34px no-repeat;
+ color: #fff;
+ font-size: 12px;
+}
+
+.header .center {
+ display: block;
+ height: 50px;
+ line-height: 50px;
+ padding-left: 50px;
+ padding-right: 50px;
+ text-align: center;
+ font-size: 18px;
+ color: #fff;
+}
+
+
+/* 内容部分 */
+
+.product {
+ width: 100%;
+ max-width: 750px;
+ padding: 10px;
+ /* background-color: skyblue; */
+}
+
+.info h3 {
+ color: #5a5a5a;
+}
+
+.info p {
+ width: 100%;
+ height: 25px;
+ margin: 12px 0;
+ color: #999;
+}
+
+.pic img {
+ width: 120px;
+ height: 120px;
+ float: right;
+ margin-top: 10px;
+}
+
+.content {
+ width: 100%;
+}
+
+.content p {
+ font-size: 16px;
+ color: #606060;
+ margin-top: 10px;
+}
+
+.big_img {
+ width: 100%;
+ height: 350px;
+ margin: 6px 0;
+}
+
+.big_img img {
+ float: left;
+ width: 350px;
+ height: 350px;
+}
+
+
+/* 是否有货 */
+
+.list {
+ overflow: hidden;
+ width: 100%;
+ padding: 10px 0;
+ margin-top: 30px;
+ text-align: center;
+}
+
+.list .area {
+ /* display: block; */
+ width: 154px;
+ padding: 0 20px 0 16px;
+ margin: 0 auto;
+ border: 1px solid #f1f1f1;
+ box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list .area .info {
+ width: 116px;
+ height: 21px;
+}
+
+.list .area .info a {
+ display: block;
+ width: 116px;
+ height: 21px;
+ padding-left: 5px;
+ padding-right: 0;
+ border-bottom: 1px dashed #ccc;
+}
+
+.list .area .info a .site {
+ float: left;
+ padding-left: 5px;
+}
+
+.list .area .info a .yes {
+ float: right;
+ color: #ff841f;
+ padding-right: 5px;
+}
+
+
+/* 前往购买部分 */
+
+.go {
+ width: 100%;
+ max-width: 750px;
+ height: 30px;
+ margin: 20px 0;
+ text-align: center;
+ line-height: 30px;
+ padding: 0 10px;
+}
+
+.go a {
+ display: block;
+ height: 30px;
+ background-color: #ff841f;
+ color: #fff;
+ font-size: 16px;
+ border-radius: 5px;
+}
+
+.erwema {
+ width: 100%;
+ margin: 20px 10px 20px 10px;
+}
+
+.erwema img {
+ width: 100%;
+ height: auto;
+}
+
+
+/* 评论部分 */
+
+.comment {
+ padding: 10px;
+ background-color: #fff;
+}
+
+.txt {
+ width: 100%;
+ height: 30px;
+}
+
+.txt span {
+ font-size: 16px;
+ color: #000;
+}
+
+.replay {
+ width: 100%;
+}
+
+.replay .form {
+ width: 100%;
+ border: 1px solid #ccc;
+}
+
+.replay .form textarea {
+ width: 100%;
+ height: 100px;
+}
+
+.ctrl {
+ width: 100%;
+ height: 36px;
+ background-color: #f1f1f1;
+ border-top: 1px solid #ccc;
+}
+
+.ctrl button {
+ border: none;
+ width: 105px;
+ height: 36px;
+ background-color: #ff841f;
+ float: right;
+ color: #fff;
+ font-size: 16px;
+}
+
+
+/* 最新评论 */
+
+.comment_bottom {
+ width: 100%;
+ margin: 20px 10px;
+}
+
+.comment_bottom .list_text {
+ width: 100%;
+}
+
+.list_text .left {
+ width: 50px;
+ height: 50px;
+ padding: 10px;
+ float: left;
+}
+
+.list_text .left img {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+}
+
+.list_text .right {
+ overflow: hidden;
+ padding-left: 10px;
+ padding-right: 20px;
+}
+
+.list_text .right .fl {
+ color: skyblue;
+}
+
+.list_text .right .fr {
+ color: #ccc;
+ font-size: 12px;
+}
+
+.list_text .right .bottom {
+ margin-top: 5px;
+ font-size: 16px;
+ color: #666;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>慢慢买官网首页</title>
+ <link rel="stylesheet" href="css/base.css">
+ <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+ <link rel="stylesheet" href="css/common.css">
+ <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+ <div class="container">
+  <!-- 头部部分 -->
+  <div class="header">
+   <div class="logo">
+    <img src="images/header_logo.png" alt="">
+   </div>
+   <a href="" class="appdown">
+    <img src="images/header_app.png" alt="">
+   </a>
+  </div>
+
+  <!-- 搜索部分 -->
+  <div class="search_form">
+   <form action="#" class="search clearfix">
+    <input type="text" placeholder="请输入你想比较的商品" class="text">
+    <input class="sousuo" value="搜索">
+   </form>
+  </div>
+
+
+  <!-- 导航部分 -->
+  <div class="nav">
+   <div class="nav_search">
+    <ul class="clearfix">
+     <!-- <li>
+      <a href="">
+       <img src="images/ic_search.png" alt="">
+       <span>比价搜索</span>
+      </a>
+     </li> -->
+     <!-- 需要渲染 -->
+    </ul>
+   </div>
+
+
+  </div>
+
+  <!-- 超值折扣部分 -->
+  <div class="recommen">
+   <div class="list_title_content">
+    <span>超值折扣推荐</span>
+    <img src="images/star.svg" alt="">
+   </div>
+  </div>
+
+  <!-- 产品列表-->
+  <div class="recommen-product">
+
+   <div class="list_product">
+    <ul class="clearfix">
+
+     <!-- <li>
+      <a href="">
+       <div class="list_img">
+        <img src="images/jiangyou.jpg" alt="">
+       </div>
+       <div class="list_info">
+        <div class="title">移动端凑单品：海天 鲜味 生抽
+         <span> 1.28L</span>
+        </div>
+        <div class="other clearfix">
+         <span class="fl">京东商城 | 10-25 14:10</span>
+         <span class="fr">
+          <i class="iconfont icon-icon222">1</i>
+         </span>
+        </div>
+       </div>
+      </a>
+     </li> -->
+
+     <!--需要渲染的部分 -->
+
+
+
+    </ul>
+
+   </div>
+   <!-- 更多优惠信息 -->
+   <div class="more-bar">
+    <a href="">更多优惠信息 >> </a>
+   </div>
+  </div>
+
+  <!-- 品牌排行部分 -->
+  <div class="recommen-content clearfix">
+   <span class="ranking">品牌排行</span>
+   <img src="images/star.svg" alt="">
+  </div>
+
+
+  <!-- 底部部分 -->
+  <div class="footer">
+   <div class="foot_top">
+    <ul>
+     <li>
+      <a href="javascript:;">登录</a>
+     </li>
+     <li>
+      <a href="javascript:;">注册</a>
+
+     </li>
+     <li>
+      <a href="#">
+       <span>↑</span>
+       <span>返回顶部</span>
+      </a>
+
+     </li>
+    </ul>
+   </div>
+
+   <div class="foot_bottom">
+    <p>
+     <a href="">手机APP下载</a>
+     <a href="">慢慢买手机版</a>
+     <span>--掌上比价平台</span>
+    </p>
+    <p>m.manmanbuy.com</p>
+   </div>
+
+  </div>
+
+
+ </div>
+
+ <!-- 导航渲染 -->
+ <script type="text/html" id="tpl">
+  {{each result v i}}
+  <li>
+   <a href="{{v.titlehref}}">
+    {{#v.img}}
+    <span>{{v.name}}</span>
+   </a>
+  </li>
+  {{/each}}
+ </script>
+
+ <!-- 列表渲染 -->
+ <script type="text/html" id="tpl1">
+
+  {{each result v i}}
+
+  <li>
+   <a href="product.html?productId={{v.productId}}">
+    <div class="list_img">
+     {{#v.productImgSm}}
+    </div>
+    <div class="list_info">
+     <div class="title">{{v.productName}}
+      <span>{{v.productPinkage}}</span>
+     </div>
+     <div class="other clearfix">
+      <span>{{v.productFrom}}|{{v.productTime}}</span>
+      <div>
+       <i class="iconfont icon-icon222"></i>
+       <span>{{v.productComCount}}</span>
+      </div>
+     </div>
+    </div>
+   </a>
+  </li>
+
+  {{/each}}
+ </script>
+
+ <script src="lib/jquery/jquery.js"></script>
+ <script src="lib/artTemplate/template-web.js"></script>
+ <script src="js/index.js"></script>
+</body>
+
+</html>
